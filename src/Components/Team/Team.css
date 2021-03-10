@@ -1,0 +1,14 @@
+.team{
+    background-color: palegreen;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding:10px;
+    
+}
+.icon{
+    margin-left: 5px;
+}
+img{
+    width:100%
+    
+}
