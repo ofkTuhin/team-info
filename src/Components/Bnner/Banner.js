@@ -1,9 +1,12 @@
 import React from 'react';
+import './banner.css'
 
 const Banner = () => {
     return (
-        <div>
-            
+        <div className="banner">
+           <div className="overLay">
+               
+           </div>
         </div>
     );
 };

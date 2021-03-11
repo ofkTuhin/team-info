@@ -1,0 +1,24 @@
+.info{
+    background-color: #82dada;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.info img{
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.teamDetails{
+    text-align:left;
+    padding: 10px;
+}
+.team-info{
+    background-color:blue
+}

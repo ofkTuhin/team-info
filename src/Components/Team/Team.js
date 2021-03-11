@@ -6,7 +6,18 @@ import { Link } from 'react-router-dom';
 
 
 const Team = (props) => {
- const {strTeam,strTeamBadge,strSport,idTeam}=props.teams
+ const {strTeam,strTeamBadge,strSport,idTeam,strGender}=props.teams
+ let button ;
+ let gender=strGender
+ console.log(gender)
+ if(gender=="Male")
+ {
+     button=<Link to={`/teamdetails/${idTeam}`}> <button className="btn btn-primary"> Explore<FontAwesomeIcon icon={ faArrowRight} className="icon"></FontAwesomeIcon></button></Link>
+ }
+ else{
+    button=<Link to="/home"> <button className="btn btn-primary"> Explore<FontAwesomeIcon icon={ faArrowRight} className="icon"></FontAwesomeIcon></button></Link>
+
+ }
     
     return (
         <div className="col-lg-3 col-md-6 col-sm-12">
@@ -14,7 +25,12 @@ const Team = (props) => {
            <img src={strTeamBadge}></img>
             <h4>{strTeam}</h4>
             <p>Sport Type {strSport}</p>
-           <Link to={`/teamdetails/${idTeam}`}> <button className="btn btn-primary"> Explore<FontAwesomeIcon icon={ faArrowRight} className="icon"></FontAwesomeIcon></button></Link>
+          
+              
+              {
+              button 
+              }  
+          
         </div>
         </div>
     );
