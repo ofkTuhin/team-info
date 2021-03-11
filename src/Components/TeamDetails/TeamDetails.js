@@ -32,10 +32,10 @@ const TeamDetails = () => {
 
  if( gender==="Male")
  {
-     teamImage=<img src={maleImage}></img>
+     teamImage=<img src={maleImage} alt="Male"></img>
  }
  else{
-    teamImage=<img src={femaleImage}></img>
+    teamImage=<img src={femaleImage} alt="Female"></img>
 
  }
 
@@ -44,7 +44,7 @@ const TeamDetails = () => {
         <div>
             
               
-            <img src={strTeamBanner}></img>
+            <img src={strTeamBanner} alt="Team"></img>
 
             <div className="team-info">
             <div className="container">
@@ -78,9 +78,9 @@ const TeamDetails = () => {
                    </div>
                    <div className="favIcon">
                    
-                       <a href="#" className="social"><FontAwesomeIcon icon={ faFacebook} className="socialIcon"></FontAwesomeIcon></a>
-                       <a href="#" className="social"><FontAwesomeIcon icon={ faTwitter} className="socialIcon"></FontAwesomeIcon></a>
-                       <a href="#" className="social"><FontAwesomeIcon icon={ faYoutube} className="socialIcon"></FontAwesomeIcon></a>
+                       <a  className="social"><FontAwesomeIcon icon={ faFacebook} className="socialIcon"></FontAwesomeIcon></a>
+                       <a  className="social"><FontAwesomeIcon icon={ faTwitter} className="socialIcon"></FontAwesomeIcon></a>
+                       <a  className="social"><FontAwesomeIcon icon={ faYoutube} className="socialIcon"></FontAwesomeIcon></a>
                        
                    </div>
                 </div>

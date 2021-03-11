@@ -22,7 +22,7 @@ const Team = (props) => {
     return (
         <div className="col-lg-3 col-md-6 col-sm-12">
            <div className="team">
-           <img src={strTeamBadge}></img>
+           <img src={strTeamBadge} alt="image"></img>
             <h4>{strTeam}</h4>
             <p>Sport Type {strSport}</p>
           
