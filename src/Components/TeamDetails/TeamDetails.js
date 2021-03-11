@@ -26,7 +26,7 @@ const TeamDetails = () => {
           
         })
     },[idTeam,teamInfo])
-    const {intFormedYear,strTeamBanner,strCountry,strSport,strGender}=teamInfo
+    const {intFormedYear,strTeamBanner,strCountry,strSport,strGender,strFacebook,strTwitter,strYoutube}=teamInfo
     let teamImage;
     let gender=strGender
 
@@ -78,9 +78,9 @@ const TeamDetails = () => {
                    </div>
                    <div className="favIcon">
                    
-                       <a  className="social"><FontAwesomeIcon icon={ faFacebook} className="socialIcon"></FontAwesomeIcon></a>
-                       <a  className="social"><FontAwesomeIcon icon={ faTwitter} className="socialIcon"></FontAwesomeIcon></a>
-                       <a  className="social"><FontAwesomeIcon icon={ faYoutube} className="socialIcon"></FontAwesomeIcon></a>
+                       <a  className="social"href={strFacebook}><FontAwesomeIcon icon={ faFacebook} className="socialIcon"></FontAwesomeIcon></a>
+                       <a  className="social"href={strTwitter}><FontAwesomeIcon icon={ faTwitter} className="socialIcon"></FontAwesomeIcon></a>
+                       <a  className="social"href={strYoutube}><FontAwesomeIcon icon={ faYoutube} className="socialIcon"></FontAwesomeIcon></a>
                        
                    </div>
                 </div>

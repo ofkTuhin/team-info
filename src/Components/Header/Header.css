@@ -14,6 +14,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     transition-duration:1s ;
+    cursor: pointer;
    
 }
 .navLi a{
