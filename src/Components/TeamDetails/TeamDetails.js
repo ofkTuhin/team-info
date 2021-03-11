@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter,faYoutube} from '@fortawesome/free-brands-svg-icons'
 import maleImage from '../../images/male.png'
 import femaleImage from '../../images/female.png'
+import { faFlag, faFutbol, faHistory, faMars } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -54,10 +55,10 @@ const TeamDetails = () => {
                           <div className="row">
                           <div className="col-lg-7 col-sm-12">
                            <div className="teamDetails">
-                               <p>Founded: {intFormedYear}</p>
-                               <p>Country: {strCountry}</p>
-                               <p>Sport type: {strSport}</p>
-                               <p>Gender: {strGender}</p>
+                               <p><FontAwesomeIcon icon={ faHistory} ></FontAwesomeIcon> Founded: {intFormedYear}</p>
+                               <p><FontAwesomeIcon icon={ faFlag} ></FontAwesomeIcon> Country: {strCountry}</p>
+                               <p><FontAwesomeIcon icon={ faFutbol} ></FontAwesomeIcon> Sport type: {strSport}</p>
+                               <p><FontAwesomeIcon icon={ faMars} ></FontAwesomeIcon>   Gender: {strGender}</p>
                            </div>
                        </div>
                        <div className="col-lg-5 col-sm-12">
