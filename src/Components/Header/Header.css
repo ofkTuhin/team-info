@@ -10,13 +10,14 @@
 .navLi{
     padding: 10px;
     margin-right: 10px;
-   
-}
-.navLi a{
     color:  #3d195b;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     transition-duration:1s ;
+   
+}
+.navLi a{
+
 
    
 }
@@ -27,7 +28,7 @@
 .logo img{
     width: 100%;
 }
-.navLi:hover a{
+.navLi:hover {
     background-color:#3d195b ;
     color:#ffff;
 }
