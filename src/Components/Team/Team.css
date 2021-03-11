@@ -16,8 +16,7 @@ img{
 }
 .team:hover{
     box-shadow: 0px 0px 10px #ffff;
-    transform-origin: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
+ 
     background-color: #3d195b;
     color: #ffff;
     
