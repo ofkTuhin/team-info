@@ -1,9 +1,9 @@
 import React from 'react';
-import Hooks ,{ useState,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import { useParams } from 'react-router';
 import './teamDeails.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, } from '@fortawesome/free-solid-svg-icons'
+
 import { faFacebook, faTwitter,faYoutube} from '@fortawesome/free-brands-svg-icons'
 import maleImage from '../../images/male.png'
 import femaleImage from '../../images/female.png'
@@ -25,12 +25,12 @@ const TeamDetails = () => {
             
           
         })
-    },[])
-    const {intFormedYear,strTeamBanner,strCountry,strSport,strGender,strStadiumThumb}=teamInfo
+    },[idTeam,teamInfo])
+    const {intFormedYear,strTeamBanner,strCountry,strSport,strGender}=teamInfo
     let teamImage;
     let gender=strGender
 
- if( gender=="Male")
+ if( gender==="Male")
  {
      teamImage=<img src={maleImage}></img>
  }
@@ -54,8 +54,8 @@ const TeamDetails = () => {
                           <div className="row">
                           <div className="col-lg-7 col-sm-12">
                            <div className="teamDetails">
-                               <p>Founded:{intFormedYear}</p>
-                               <p>Country:{strCountry}</p>
+                               <p>Founded: {intFormedYear}</p>
+                               <p>Country: {strCountry}</p>
                                <p>Sport type: {strSport}</p>
                                <p>Gender: {strGender}</p>
                            </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faFacebook} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, } from '@fortawesome/free-solid-svg-icons'
 import './Team.css'
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Team = (props) => {
  let button ;
  let gender=strGender
  console.log(gender)
- if(gender=="Male")
+ if(gender==="Male")
  {
      button=<Link to={`/teamdetails/${idTeam}`}> <button className="btn btn-primary"> Explore<FontAwesomeIcon icon={ faArrowRight} className="icon"></FontAwesomeIcon></button></Link>
  }

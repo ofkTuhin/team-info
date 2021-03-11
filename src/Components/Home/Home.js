@@ -1,6 +1,6 @@
 import React from 'react';
 import Team from '../Team/Team';
-import Hooks ,{ useState,useEffect } from 'react';
+import  { useState,useEffect } from 'react';
 import Banner from '../Bnner/Banner';
 import './home.css'
 
