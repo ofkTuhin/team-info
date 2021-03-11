@@ -18,15 +18,15 @@ const Header = () => {
         <li class="nav-item navLi">
         <Link to="/"> <a class="nav-link active" aria-current="page" href="#">Home</a></Link>
         </li>
-        <li class="nav-item navLi">
-          <a class="nav-link" href="#">About</a>
+        {/* <li class="nav-item navLi">
+          <a class="nav-link" href="">About</a>
         </li>
         <li class="nav-item navLi">
           <a class="nav-link " href="#">History</a>
         </li>
         <li class="nav-item navLi">
           <a class="nav-link" href="#" >Achievements</a>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
