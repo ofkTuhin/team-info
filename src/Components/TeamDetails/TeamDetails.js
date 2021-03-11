@@ -4,7 +4,11 @@ import { useParams } from 'react-router';
 import './teamDeails.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook} from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faTwitter,faYoutube} from '@fortawesome/free-brands-svg-icons'
+import maleImage from '../../images/male.png'
+import femaleImage from '../../images/female.png'
+
+
 
 
 const TeamDetails = () => {
@@ -22,7 +26,18 @@ const TeamDetails = () => {
           
         })
     },[])
-    const {intFormedYear,strTeamBanner,strCountry,strSport,strGender,strTeamFanart4}=teamInfo
+    const {intFormedYear,strTeamBanner,strCountry,strSport,strGender,strStadiumThumb}=teamInfo
+    let teamImage;
+    let gender=strGender
+
+ if( gender=="Male")
+ {
+     teamImage=<img src={maleImage}></img>
+ }
+ else{
+    teamImage=<img src={femaleImage}></img>
+
+ }
 
    
     return (
@@ -37,7 +52,7 @@ const TeamDetails = () => {
                    <div className="info" >
                       <div className="container">
                           <div className="row">
-                          <div className="col-lg-6 col-sm-12">
+                          <div className="col-lg-7 col-sm-12">
                            <div className="teamDetails">
                                <p>Founded:{intFormedYear}</p>
                                <p>Country:{strCountry}</p>
@@ -45,11 +60,12 @@ const TeamDetails = () => {
                                <p>Gender: {strGender}</p>
                            </div>
                        </div>
-                       <div className="col-lg-6 col-sm-12">
+                       <div className="col-lg-5 col-sm-12">
                            <div className="teamImage">
 
-                               <img src={strTeamFanart4}></img>
-
+                               {teamImage}
+                                   
+                               
                            </div>
                        </div>
                           </div>
@@ -62,7 +78,9 @@ const TeamDetails = () => {
                    </div>
                    <div className="favIcon">
                    
-                       <a href="#" className="social"><FontAwesomeIcon icon={ faFacebook} className="icon"></FontAwesomeIcon></a>
+                       <a href="#" className="social"><FontAwesomeIcon icon={ faFacebook} className="socialIcon"></FontAwesomeIcon></a>
+                       <a href="#" className="social"><FontAwesomeIcon icon={ faTwitter} className="socialIcon"></FontAwesomeIcon></a>
+                       <a href="#" className="social"><FontAwesomeIcon icon={ faYoutube} className="socialIcon"></FontAwesomeIcon></a>
                        
                    </div>
                 </div>

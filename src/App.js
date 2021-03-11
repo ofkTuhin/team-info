@@ -10,25 +10,15 @@ import TeamDetails from './Components/TeamDetails/TeamDetails'
 import Home from './Components/Home/Home'
 import Wrong from './Components/Wrong/Wrong';
 
+import Header from './Components/Header/Header';
+
 function App() {
   return (
     <div className="App">
 
       <Router>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/users">Users</Link>
-              </li>
-            </ul>
-          </nav>
+        <Header></Header>
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}

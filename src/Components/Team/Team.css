@@ -1,5 +1,5 @@
 .team{
-    background-color: #98adfb;
+    background-color: #ffff;
     margin: 10px 0;
     box-sizing: border-box;
     padding: 10px;
@@ -15,8 +15,10 @@ img{
     
 }
 .team:hover{
-    box-shadow: 10px 10px 10px rgba(238, 236, 236, 0.027);
+    box-shadow: 0px 0px 10px #ffff;
     transform-origin: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
+    background-color: #3d195b;
+    color: #ffff;
     
 }

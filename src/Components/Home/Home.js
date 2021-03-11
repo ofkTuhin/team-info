@@ -19,6 +19,8 @@ const Home = () => {
     },[])
     return (
         <div className="home">
+             
+            
 
             <Banner></Banner>
             

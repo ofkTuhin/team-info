@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap');
+.main-menu{
+    background-color:#fdfdfd;
+    padding:0px;
+}
+.Menubar{
+    margin: 0 auto;
+
+}
+.navLi{
+    padding: 10px;
+    margin-right: 10px;
+   
+}
+.navLi a{
+    color:  #3d195b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    transition-duration:1s ;
+
+   
+}
+.logo {
+    width: 250px;
+    height:100px;
+}
+.logo img{
+    width: 100%;
+}
+.navLi:hover a{
+    background-color:#3d195b ;
+    color:#ffff;
+}
+.button{
+    color: #000;
+}
