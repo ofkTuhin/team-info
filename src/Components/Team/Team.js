@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faFacebook} from '@fortawesome/free-solid-svg-icons'
 import './Team.css'
 import { Link } from 'react-router-dom';
 

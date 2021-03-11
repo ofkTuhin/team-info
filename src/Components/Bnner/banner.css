@@ -6,7 +6,20 @@
     background-position: center;
 }
 .overLay{
-   background-color: rgba(206 190 190 / 55%);
+   background-color: rgb(33 30 30 / 72%);
     height: 500px;
 
+}
+.title{
+    position: relative;
+    top:50%;
+} 
+.title h2{
+    color: #f7f7fb;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: fangsong;
+    text-shadow: 3px 4px 7px #f1eaea;
+
+    
 }

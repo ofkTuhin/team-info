@@ -2,6 +2,7 @@ import React from 'react';
 import Team from '../Team/Team';
 import Hooks ,{ useState,useEffect } from 'react';
 import Banner from '../Bnner/Banner';
+import './home.css'
 
 const Home = () => {
     const [team,setTeam]=  useState([])
@@ -17,7 +18,7 @@ const Home = () => {
         })
     },[])
     return (
-        <div>
+        <div className="home">
 
             <Banner></Banner>
             
